@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Page</title>
+  <style>
+    body {
+      margin:0;
+      height:100vh;
+      background: #2F5A76;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .c{
+      width:0;
+      height:0;
+      border-left: 40px solid transparent; 
+      border-right: 40px solid transparent; 
+      border-bottom: 60px solid #C15965;
+      position:relative;
+    }
+    .c:after{
+      content:"";
+      width:100px;
+      height:140px;
+      border:40px solid #C15965;
+      border-top-right-radius: 190px;
+      border-bottom-right-radius: 190px;
+      border-left:none;
+      position:absolute;
+      bottom:-140px;
+      left:0px;
+    }
+    .c:before{
+      content:"";
+      width:100px;
+      height:140px;
+      border:40px solid #C15965;
+      border-top-left-radius: 190px;
+      border-bottom-left-radius: 190px;
+      border-right:none;
+      position:absolute;
+      bottom:-140px;
+      right:0;
+    }
+    .line{
+      background:#2F5A76;
+      width:80px;
+      height:50px;
+      margin-top:90px;
+      position:absolute;
+      z-index:1;
+      right:-40px
+    }
+  </style>
+</head>
+<body>
+  <div class='c'>
+    <div class='line'></div>
+  </div>
+</body>
+</html>
+
